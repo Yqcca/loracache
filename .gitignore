@@ -1,5 +1,5 @@
 venv/*
 images/*
-models/lora/*
+LoRA_Cache/models/lora/*
 .DS_Store/*
 __pycache__/*
