@@ -25,7 +25,7 @@ def get_prompt(image_style):
 
 def main(args):
 
-    lora_path = os.path.join('models/lora', args.image_style)
+    lora_path = os.path.join('LoRA_Cache/models/lora', args.image_style)
     lora_info = load_lora_info(args.image_style)
 
     # Get correct checkpoint

@@ -25,7 +25,7 @@ def get_prompt(image_style):
 
 def main(args):
 
-    lora_path = os.path.join('models/lora', args.image_style)
+    lora_path = os.path.join('LoRA_Cache/models/lora', args.image_style)
     lora_info = load_lora_info(args.image_style)
 
     # Get correct checkpoint
@@ -74,7 +74,7 @@ def main(args):
         generator=args.generator,
         cross_attention_kwargs={"scale": args.lora_scale},
     ).images[0]
-    image.save('lora_test.png', 'PNG')
+    image.save('~/lora_test.png', 'PNG')
 
 if __name__ == "__main__":
 
