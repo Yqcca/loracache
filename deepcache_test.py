@@ -5,7 +5,7 @@ pipe = StableDiffusionPipeline.from_pretrained('runwayml/stable-diffusion-v1-5')
 image = pipe(
     prompt='A girl looking up at the stars'
 ).images[0]
-image.save('~/image.png', 'PNG')
+image.save('image.png', 'PNG')
 # With DeepCache
 image = pipe(
     prompt='A girl looking up at the stars',
@@ -13,4 +13,4 @@ image = pipe(
     cache_layer_id=0,
     cache_block_id=1
 ).images[0]
-image.save('~/image_dc.png', 'PNG')
+image.save('image_dc.png', 'PNG')

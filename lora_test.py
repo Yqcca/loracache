@@ -74,7 +74,7 @@ def main(args):
         generator=args.generator,
         cross_attention_kwargs={"scale": args.lora_scale},
     ).images[0]
-    image.save('~/lora_test.png', 'PNG')
+    image.save('lora_test.png', 'PNG')
 
 if __name__ == "__main__":
 
